@@ -2,7 +2,7 @@ import React from 'react';
 
 const SearchBar = ({ searchTerm, setSearchTerm }) => {
   return (
-    <div className="search-bar">
+    <div className="w-full flex justify-center my-6">
       <input
         type="text"
         placeholder="Search movies..."

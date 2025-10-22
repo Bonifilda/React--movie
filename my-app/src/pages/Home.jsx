@@ -22,8 +22,8 @@ const Home = () => {
   if (error) return <div className="error">Error: {error}</div>;
 
   return (
-    <div className="home-container">
-      <div className="filters-container">
+    <div className="home-container text-shadow-black ">
+      <div className="filters-container text-black">
         <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
         <CategoryFilter 
           categories={categories} 
