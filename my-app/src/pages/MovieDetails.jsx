@@ -47,10 +47,10 @@ const MovieDetails = () => {
         <div className="text-3xl md:text-4xl font-bold text-sky-400 mb-3">
           <h1>{movie.name}</h1>
           
-          <div className="bg-gray-800 px-3 py-1 rounded-full">
-            {movie.rating?.average && <span className="bg-gray-800 px-3 py-1 rounded-full">⭐ {movie.rating.average}/10</span>}
-            {movie.premiered && <span className="bg-gray-800 px-3 py-1 rounded-full">({new Date(movie.premiered).getFullYear()})</span>}
-            {movie.runtime && <span className="bg-gray-800 px-3 py-1 rounded-full">{movie.runtime} min</span>}
+          <div className=" px-3 py-1 rounded-full">
+            {movie.rating?.average && <span className=" px-3 py-1 rounded-full">⭐ {movie.rating.average}/10</span>}
+            {movie.premiered && <span className=" px-3 py-1 rounded-full">({new Date(movie.premiered).getFullYear()})</span>}
+            {movie.runtime && <span className=" px-3 py-1 rounded-full">{movie.runtime} min</span>}
           </div>
           
           {movie.genres && movie.genres.length > 0 && (
