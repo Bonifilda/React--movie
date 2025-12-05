@@ -9,9 +9,11 @@ const Home = () => {
   const { movies, loading, error, categories } = useFetchMovies();
   const { toggleFavorite, isFavorite } = useFavorites();
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('')
+  
 
-  // Filter movies based on search term and selected category
+
+  
   const filteredMovies = movies.filter(movie => {
     const matchesSearch = movie.name.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesCategory = selectedCategory === '' || (movie.genres && movie.genres.includes(selectedCategory));
